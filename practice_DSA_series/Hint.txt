@@ -1,0 +1,38 @@
+####################################################################### ReverseNo ###################################################################
+
+To reverse a number simply follow:
+	 while(n!=0){
+        r = n%10;
+        rn = rn*10 + r;
+        n = n/10;}
+
+####################################################################### ReverseNo ###################################################################
+
+####################################################################### COIN FLIP ###################################################################
+
+In this problem, we have n number of coins facing sameside, then we flip coin for n rounds such that in i'th round upto i coins are flipped. so in last 
+round we have to calculate no of heads/tails (asked by problem itself)
+
+ex 1. n=5, q=1 (all facing heads), 
+0th round	-> 1st round	-> 2nd round	-> 3rd round	-> 4th round	-> 5th round		Solution
+H H H H H 	-> T H H H H	-> H T H H H	-> T H T H H	-> H T H T H	-> T H T H T		H-> 2, T-> 3
+
+ex 2. n=6 q=2 (all facing tails),
+0th round	-> 1st round	-> 2nd round	  -> 3rd round	   -> 4th round	    -> 5th round      -> 6th round      Solution
+T T T T T T T	-> H T T T T T T -> T H T T T T T -> H T H T T T T -> T H T H T T T -> H T H T H T T  -> T H T H T H 	  H-> 3 T-> 3
+
+
+So here i noticed that if n is even then no. of H/T is going to be half of N and if n is odd then no of head depends upon initial stage,
+like if all coins were T then in odd rounds  no of H will be (n+ 1)/2 and no of T will be (n-1)/2
+and  if all coins were H then in odd rounds no of T will be (n+1)/2 and no of H will be (n+1)/2
+
+####################################################################### COIN FLIP ###################################################################
+
+
+####################################################################### LADOO     ###################################################################
+
+In this question we are provided some condition and we have to  caculate score on basis of conditions, so a brute force method for calculating 
+can be implemented directly. 
+floor(), in CONTEST_WIN we have to add rank only if it is less than 20;
+
+####################################################################### LADOO     ###################################################################
